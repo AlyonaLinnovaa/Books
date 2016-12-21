@@ -46,7 +46,7 @@ class BookController extends Controller
 			return $this->render('view',
 			['book' => $book]);
 		} else {
-			 throw new \yii\web\notfoundhttpexception( 'Книга не найдена');
+			throw new \yii\web\NotFoundHttpException('Книга не найдена');
 		}
 	}
 	
